@@ -1,0 +1,143 @@
+:root {
+    --primary-color: #07070A;
+    --secondary-color: #24272B;
+    --accent-color1: #3E78B2;
+    --accent-color2: #004BA8;
+    --accent-color3: #4A525A;
+
+    --heading-font: 'Indie Flower', serif;
+    --paragraph-font: 'Open Sans', sans-serif;
+}
+
+header {
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--secondary-color);
+    font-size: 1.5rem;
+}
+
+nav a {
+    display: block;
+    padding: 0.5rem;
+    margin: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: var(--accent-color3);
+    text-decoration: overline;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.card {
+    grid-column: 1/8;
+    background-color: var(--secondary-color);
+    margin: 2rem;
+}
+
+section h2 {
+    background-color: var(--accent-color2);
+    border-radius: 0.5rem;
+    font-size: 3rem;
+    color: white;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row: 1/4;
+    grid-column: 1/7;
+    color: white;
+}
+
+
+.about img {
+    grid-row: 2/-1;
+    height: 200px;
+    width: auto;
+}
+
+.about p {
+    grid-row: 2/-1;
+    padding: 1rem;
+}
+
+.utah {
+    display: grid;
+    grid-column: 1/7;
+    color: white;
+}
+
+.utah img {
+    grid-row: 2/-1;
+    grid-column: 3/-1;
+    height: 250px;
+    width: auto;
+    border-radius: 0.5rem;
+    margin: 10px;
+}
+
+.utah h3 {
+    grid-row-start: 1;
+    text-decoration: underline;
+    font-size: 2rem;
+}
+
+.utah p {
+    grid-row: 1;
+    padding: 2rem;
+
+}
+
+aside {
+    grid-column: 8/-1;
+    grid-row: 1/3;
+    background-color: var(--secondary-color);
+    margin: 2rem;
+    color: white;
+}
+
+aside li {
+    font-size: 2rem;
+}
+
+aside h2 {
+    background-color: var(--accent-color2);
+    border-radius: 0.5rem;
+    font-size: 3rem;
+}
+
+aside a {
+    color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    padding: 1rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    text-align: center;
+}

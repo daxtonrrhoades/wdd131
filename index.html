@@ -1,11 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Index | Daxton Rhoades | WDD131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Daxton Rhoades</title>
+    <meta name="Description" content="WDD 131 - Dynamic Web Fundamentals Home page for Daxton Rhoades">
+    <meta name="author" content="Daxton Rhoades">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-    
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - Daxton Rhoades</h1>
+        <nav>
+            <a href="https://www.linkedin.com/in/daxton-rhoades-17160a2ab/">LinkedIn</a>
+            <a href="https://byupw.instructure.com/">Canvas</a>
+            <a
+                href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/59?lang=eng&id=p7#p7">Scripture</a>
+            <a href="">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <div class="about">
+                <h2>About Me</h2>
+                <img src="images/profile.jpg" alt="Profile Picture Image">
+                <p>Hello there! I am Daxton Rhoades. I am a student at BYU Pathway Worldwide working towards a degree in
+                    software development, and I currently work full time at Americ First Credit Union in Draper, Utah. I
+                    was
+                    born and raised in Sandy, Utah and have been here my whole life along with a brother, two sisters,
+                    and
+                    my lovely parents. Some things I enjoy doing are playing video games, basketball, skateboarding, and
+                    painting. My favorite movies are the Star Wars movies and I am obsessed with them.</p>
+            </div>
+        </section>
+        <section class="card">
+            <div class="utah">
+                <h3>Utah</h3>
+                <img src="images/utah.jpg" alt="Utah Delicate Arch Image">
+                <p>Utah is located in the mid West of the United States. It's State Capital is Salt Lake City which is
+                    where
+                    General Conference is held semi-annually. It is also well known for its snow among skiiers and
+                    snowboarders as the best powder. Utah also has some beautiful National Parks such as Arches National
+                    Park. There are lots of hikes and fun activities to do outdoors in Utah.</p>
+            </div>
+        </section>
+        <aside>
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://stackoverflow.com/questions">Stack Overflow</a></li>
+                <li><a href="https://www.w3schools.com">W3 Schools</a></li>
+                <li><a href="https://www.codecademy.com/">CodeCademy</a></li>
+                <li><a href="https://www.udemy.com">Udemy</a></li>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Daxton Rhoades | Utah</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
 </body>
+
 </html>
