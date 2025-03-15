@@ -1,0 +1,71 @@
+@media screen and (min-width: 500px) {
+    :root {
+        --primary-color: #6B4E71;
+        --secondary-color: #F4D35E;
+        --accent-color1: #000807;
+        --accent-color2: #999799;
+        --accent-color3: #3D518C;
+
+        --heading-font: "Playfair Display";
+        --paragraph-font: "Roboto";
+    }
+
+    header {
+        background-color: var(--primary-color);
+        color: white;
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .navigation {
+        list-style: none;
+        display: flex;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        font-size: 1.5rem;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: None;
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    nav a:hover {
+        text-decoration: overline;
+        text-decoration-color: var(--secondary-color);
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto repeat(3, 1fr);
+        gap: 1rem;
+        max-width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    h1 {
+        font-family: var(--heading-font);
+        grid-column: 1/-1;
+        grid-row: 1;
+    }
+
+    figure img {
+        width: 300px;
+        height: auto;
+    }
+
+    footer {
+        background-color: var(--primary-color);
+        color: white;
+        text-align: center;
+        padding: 0.5rem;
+        margin: 0.5rem;
+    }
+}
