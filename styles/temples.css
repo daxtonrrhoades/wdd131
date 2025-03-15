@@ -1,4 +1,4 @@
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 599px) {
     :root {
         --primary-color: #6B4E71;
         --secondary-color: #F4D35E;
@@ -19,16 +19,26 @@
 
     .navigation {
         list-style: none;
+        padding: 0;
+        margin: 0;
     }
 
     .navigation li {
         display: none;
     }
 
+    .navigation.show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .show li {
+        display: block;
+    }
+
     nav {
         display: flex;
         justify-content: space-around;
-        margin-left: 500px;
         font-size: 1.5rem;
     }
 
