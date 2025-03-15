@@ -52,6 +52,10 @@
 
     h1 {
         font-family: var(--heading-font);
+    }
+
+    h2 {
+        font-family: var(--heading-font);
         grid-column: 1/-1;
         grid-row: 1;
     }
