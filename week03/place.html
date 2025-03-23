@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Page - WDD 131 - Daxton Rhoades</title>
+    <meta name="description"
+        content="This is a web page to show information about Utah for my WDD 131 class Daxton Rhoades">
+    <meta name="author" content="Daxton Rhoades">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Utah</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/utah-hero-large.webp">
+                <source media="(min-width: 550px)" srcset="images/utah-hero-medium.webp">
+                <img src="images/utah-hero-small.webp" alt="Hero image of Utah's Delicate Arch national park attraction"
+                    width="750" height="512">
+            </picture>
+        </div>
+        <div class="data">
+            <h2>Data</h2>
+            <ul>
+                <li>
+                    <p>Area: 84,899 mi²</p>
+                </li>
+                <li>
+                    <p>Population: 3.504 million</p>
+                </li>
+                <li>
+                    <p>
+                        Capital: Salt Lake City
+                    </p>
+                </li>
+                <li>
+                    <p>Languages: English</p>
+                </li>
+                <li>
+                    <p>Currency: US Dollars</p>
+                </li>
+                <li>
+                    <p>Time Zone: GMT-6</p>
+                </li>
+                <li>
+                    <p>Calling Codes: 801,385, 435 </p>
+                </li>
+                <li>
+                    <p>Internet TLD: .com</p>
+                </li>
+            </ul>
+        </div>
+        <div class="weather">
+            <h2>Weather</h2>
+            <div class="icon">
+                <p>🌤️</p>
+            </div>
+            <div class="svg-weather">
+                <img src="images/weather-logo.svg" alt="Weather svg icon image">
+            </div>
+            <ul>
+                <li>
+                    <p>Temperature: 50 °F</p>
+                </li>
+                <li>
+                    <p>Conditions: Cloudy</p>
+                </li>
+                <li>
+                    <p>Wind: 5mph</p>
+                </li>
+                <li>
+                    <p>Wind Chill: 4 °F</p>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Daxton Rhoades | Utah</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
