@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Sign Up</title>
+    <meta name="Description" content="This is a page to sign up for a newsletter for Wicketpedia project in WDD131">
+    <meta name="author" content="Daxton Rhoades">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <script src="scripts/project.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/Star_Wars_Logo.svg" alt="Star Wars Logo">
+        <h1>Wicketpedia</h1>
+        <a id="menu" href="#"></a>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="sources.html">Sources</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>News Letter</h2>
+        <form method="get" action="thanks.html" class="wf1">
+            <fieldset>
+                <legend>User Information</legend>
+                <label>First Name* <input type="text" name="fname" required></label>
+                <label>Last Name* <input type="text" name="lname" required></label>
+                <label>Email* <input type="email" name="email" placeholder="lukeskywalker@gmail.com" required></label>
+                <label><input type="checkbox" name="code" value="yes"> Want Spoiler Content?</label>
+            </fieldset>
+
+            <input type="submit" value="Sign up for Newsletter">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Daxton Rhoades | Utah</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wicketpedia Home Page</title>
+    <meta name="Description"
+        content="Home page containing a summary of star wars and its main characters for WDD131 Wicketpedia project">
+    <meta name="author" content="Daxton Rhoades">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <script src="scripts/project.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="images/Star_Wars_Logo.svg" alt="Star Wars Logo">
+        <h1>Wicketpedia</h1>
+        <a id="menu" href="#"></a>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="sources.html">Sources</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/wicketpedia-hero-image-large.jpg">
+                <source media="(min-width: 500px)" srcset="images/wicketpedia-hero-image-medium.jpg">
+                <img src="images/wicketpedia-hero-image-small.jpg" alt="Large image of galaxy to represent Star Wars"
+                    width="500" height="250">
+            </picture>
+        </div>
+        <div class="grid">
+            <div class="summary">
+                <h2>Star Wars Summary</h2>
+
+                <h3>Prequels</h3>
+                <p>Two Jedi Knights, Qui Gon Jinn, and Obi Wan Kenobi, are sent to negotiate with the Trade Federation.
+                </p>
+                <p>While there they are attacked by Separatist droids and have to battle their way out.</p>
+                <p>They end up making their way to Tattooine and discover a young junnkyard slave, Anakin Skywalker, who
+                    they
+                    believe could be the Chosen One.</p>
+                <p>Qui Gon Jinn is killed by Darth Maul and Obi Wan must train the young boy.</p>
+                <p>In the next film, 10 years later, Anakin is a grown Jedi Knight and training under Obi Wan as his
+                    padawan.
+                </p>
+                <p>The Jedi obtain a clone army who are clones of a bounty hunter named Jango Fett. The Separatists make
+                    moves
+                    and begin the Clone Wars.</p>
+                <p>In the third and final film of the prequels, Anakin forms a friendly bond with Chancellor Palpatine.
+                </p>
+                <p>When Anakin is asked to spy on the Chancellor, he is filled with anger and is drawn to the dark side.
+                </p>
+                <p>Obi Wan and Anakin battle on the lava planet of Mustafar where Padme follows and has birth to twins
+                    shortly
+                    before passing away.</p>
+                <p> Obi Wan defeats Anakin but does not finish him off. Palpatine rescues Anakin and creates Darth
+                    Vader.
+                </p>
+
+                <h3>Original Trilogy</h3>
+                <p>A farmboy named Luke Skywalker is sent by Old Ben, also known as Obi Wan Kenobi, to rescu princess
+                    Leia
+                    who
+                    has been taken hostage by Darth Vader.</p>
+                <p>He is accompanied by the Captain of the Millenium Falcon, Han Solo, and his fuzzy friend Chewbacca
+                    along
+                    with
+                    Old Ben and the droids, R2D2 and C3PO.</p>
+                <p>On the Death Star Obi Wan Sacrifices himself to get the others to their ship safely and stays behind
+                    with
+                    Vader and falls at his hand.</p>
+                <p>In the next film, we start on the snowy planet Hoth and Luke and his friends are attacked by Imperial
+                    forces
+                    commanded by Darth Vader.</p>
+                <p>Luke travels to Dagobah to learn the ways of the Jedi and meets Yoda, an old friend of Bens and a
+                    Jedi
+                    Master
+                    who will teach Luke.</p>
+                <p>Luke is influenced by the force to go help his friends and there he learns that Darth Vader is his
+                    father.
+                    Han is also frozen in Carbonite.</p>
+                <p>In the next film Luke is determined to bring his father back to the light side. He returns to Dagobah
+                    to
+                    finish his training and Yoda passes away.</p>
+                <p>Han is freed from Carbonite at Jabba's Palace and Luke is thrown into the Rancor's put to be eaten
+                    up.
+                    Luke
+                    is victorious and they escape the palace.</p>
+                <p>Luke is put up against Vader and his master Darth Sidious as Luke's friends plan to blow up the
+                    second
+                    Death
+                    Star</p>
+                <p>Luke convinces Vader there is still good in him and together they defeat Sidious. Though due to being
+                    electricuted Vader does not survive</p>
+            </div>
+            <aside class="characters">
+                <h2>Characters</h2>
+                <figure>
+                    <img lazy src="images/luke-image.jpg" alt="Image of Luke Skywalker">
+                    <figcaption>Luke Skywalker is the main Character of the Original Trilogy of Star Wars</figcaption>
+                </figure>
+                <figure>
+                    <img lazy src="images/han-solo-image.jpg" alt="Image of Han Solo">
+                    <figcaption>Han Solo is the Captain of the Millenium Falcon and helps Luke throughout his journey
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img lazy src="images/leia-image.jpg" alt="Princess Leia">
+                    <figcaption>Princess Leia is Lukes Sister and another Main character in Star Wars</figcaption>
+                </figure>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Daxton Rhoades | Utah</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
