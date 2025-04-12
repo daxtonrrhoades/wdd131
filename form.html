@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Assignment - Daxton Rhoades - WDD 131</title>
+    <meta name="description"
+        content="a webpage to practice the principles of making forms for class WDD131 Daxton Rhoades">
+    <meta name="author" content="Daxton Rhoades">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get" class="wf1">
+            <fieldset>
+                <Label>Product Name</Label>
+                <select name="products" id="productSelect" required>
+                    <option value="" disabled>Select a Product</option>
+                </select>
+
+                <label>Overall Rating</label>
+                <label><input type="radio" id="rating1" name="rating" required>&star;</label>
+                <label><input type="radio" id="rating2" name="rating" required>&star;&star;</label>
+                <label><input type="radio" id="rating3" name="rating" required>&star;&star;&star;</label>
+                <label><input type="radio" id="rating4" name="rating" required>&star;&star;&star;&star;</label>
+                <label><input type="radio" id="rating5" name="rating" required>&star;&star;&star;&star;&star;</label>
+
+                <label>Date of Installation <input type="date" id="installdate" name="install-date" required></label>
+
+                <label><input type="checkbox" name="features" id="feature1" value="accessibility">Accessibility</label>
+                <label><input type="checkbox" name="features" id="feature2" value="durability">Durability</label>
+                <label><input type="checkbox" name="features" id="feature3" value="performance">Performance</label>
+                <label><input type="checkbox" name="features" id="feature4" value="creativity">Creativity</label>
+                <label><input type="checkbox" name="features" id="feature5" value="other">Other</label>
+
+                <label>Written Review<textarea name="review" id="review"></textarea></label>
+
+                <label>Your Name:<input type="text" name="username" id="username"></label>
+
+                <button type="submit" value="post-review">Post Review</button>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Daxton Rhoades | Utah</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
